@@ -6,6 +6,7 @@ class Debate():
 	"""Debate crew"""
 
 	agents_config = 'config/agents.yaml'
+	task_config="config/tasks.yaml"
 
 	@agent
 	def debater_agent(self) -> Agent:
