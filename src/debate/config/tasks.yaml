@@ -1,0 +1,28 @@
+propose_task:
+  description: >
+    You are proposing the motion {motion}.
+    Come with the clear arguments in favour of motion.
+    Be very convincing.
+  expected_output: >
+    Your clear argument in favour of motion, in a concise motion.
+  agent: debater_agent
+  output_file: output/propose.md
+
+
+oppose_task:
+  description: >
+    You are inopposition the motion {motion}.
+    Come with the clear arguments in againts of motion.
+    Be very convincing.
+  expected_output: >
+    Your clear argument in againts of motion, in a concise motion.
+  agent: debater_agent
+  output_file: output/oppose.md
+
+decide_task:
+  description: >
+    Reviews the arugments presented by the debaters and decide which side is more convincing.
+  expected_output: >
+    You decide which side is more convincing and why?
+  agent: judge_agent
+  output_file: output/decide.md
